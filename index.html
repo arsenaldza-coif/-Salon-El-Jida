@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Salon El Jida — Salon de coiffure & beauté à Aïn Taya, Alger. Coupe, brushing, coloration, mèches, balayage et réservation WhatsApp." />
+  <meta name="theme-color" content="#c78272" />
+  <title data-i18n="docTitle">Salon El Jida — Salon de coiffure & beauté à Aïn Taya, Alger</title>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+  <div id="progress"></div>
+  <div id="bubbles"></div>
+  <div class="top-bar">
+    <p data-i18n="topBarText">Ouvert tous les jours · Réservation rapide via WhatsApp</p>
+    <a href="tel:+213551858534">+213 551 85 85 34</a>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html" class="logo" aria-label="Salon El Jida">
+        <span class="logo-mark">✦</span>
+        <span>Salon El Jida<br><small>Coiffure & Beauté</small></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="#services" data-i18n="navServices">Services</a></li>
+        <li><a href="#about" data-i18n="navAbout">À propos</a></li>
+        <li><a href="#gallery" data-i18n="navGallery">Galerie</a></li>
+        <li><a href="#packages" data-i18n="navPackages">Tarifs</a></li>
+        <li><a href="#reviews" data-i18n="navReviews">Avis</a></li>
+        <li><a href="#location" data-i18n="navLocation">Localisation</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+      </ul>
+
+      <div class="language-switcher" aria-label="Changer la langue">
+        <button class="lang-button" type="button" aria-expanded="false" aria-label="Changer la langue">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+            <path d="M3.6 9h16.8M3.6 15h16.8M12 3c2.4 2.5 3.6 5.5 3.6 9s-1.2 6.5-3.6 9M12 3C9.6 5.5 8.4 8.5 8.4 12s1.2 6.5 3.6 9" />
+          </svg>
+          <span class="lang-code">FR</span>
+        </button>
+        <div class="lang-dropdown" role="menu">
+          <a href="#" class="active" data-lang="fr" data-lang-label="FR" role="menuitem">Français</a>
+          <a href="#" data-lang="ar" data-lang-label="AR" role="menuitem">العربية</a>
+        </div>
+      </div>
+
+      <a class="btn btn-outline nav-cta" href="#contact" data-i18n="navCta">Réserver</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/magasin.jpg">
+          <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">Salon de coiffure et beauté à Aïn Taya</p>
+          <h1 id="hero-title" data-i18n="heroTitle">Sublimez votre chevelure et révélez votre éclat naturel</h1>
+          <p class="hero-text" data-i18n="heroText">Coupes, brushing, coloration, mèches, balayage et soins capillaires professionnels dans une atmosphère chaleureuse.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" data-i18n="bookVisit">Réserver un rendez-vous</a>
+            <a class="btn btn-whatsapp whatsapp-link" href="https://wa.me/213551858534?text=Bonjour%20Salon%20El%20Jida,%20je%20veux%20r%C3%A9server%20un%20rendez-vous." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.8a8 8 0 0 1-11.9 7l-3.9 1 1-3.8A8 8 0 1 1 20 11.8Zm-8-5.9a5.9 5.9 0 0 0-5 9l.2.3-.6 2.1 2.2-.6.3.2a5.9 5.9 0 1 0 2.9-11Zm3.4 8.4c-.2.5-1 1-1.4 1.1-.4.1-.9.2-2.8-.6-2.4-1-3.9-3.4-4-3.6-.1-.1-1-1.3-1-2.5s.6-1.8.8-2c.2-.2.4-.3.6-.3h.4c.1 0 .3 0 .5.4l.7 1.7c.1.2.1.4 0 .5l-.3.5-.2.3c-.1.1-.2.3-.1.5.1.2.6 1 1.3 1.6.9.8 1.6 1 1.8 1.1.2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.7.8c.2.1.4.2.4.3 0 .1 0 .6-.2 1.1Z"/></svg>
+              <span data-i18n="whatsappDirect">WhatsApp direct</span>
+            </a>
+            <a class="btn btn-soft" href="#services" data-i18n="discoverServices">Découvrir nos tarifs</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal" data-delay="120">
+          <img src="assets/1.jpg" alt="Salon El Jida Aïn Taya Coiffure" />
+          <div class="floating-card">
+            <strong data-i18n="expressBeauty">Soin & Coiffure</strong>
+            <span data-i18n="expressBeautySub">Brushing à partir de 500 DA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-services" aria-label="Services principaux">
+      <div class="container service-mini-grid">
+        <article class="service-mini reveal">
+          <img src="assets/new-coupes-brushing.png" alt="Coupes & Brushings" />
+          <div>
+            <h2 data-i18n="quickHair">Coupes &amp; Brushings</h2>
+            <a href="#services" data-i18n="viewMore">Voir les tarifs</a>
+          </div>
+        </article>
+        <article class="service-mini reveal" data-delay="100">
+          <img src="assets/new-coloration-meches.png" alt="Colorations & Mèches" />
+          <div>
+            <h2 data-i18n="quickNails">Colorations &amp; Mèches</h2>
+            <a href="#services" data-i18n="viewMore">Voir les tarifs</a>
+          </div>
+        </article>
+        <article class="service-mini reveal" data-delay="200">
+          <img src="assets/new-onglerie-extensions.png" alt="Onglerie & Extensions" />
+          <div>
+            <h2 data-i18n="quickMakeup">Onglerie &amp; Extensions</h2>
+            <a href="#services" data-i18n="viewMore">Voir les tarifs</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section section-sm">
+      <div class="container narrow reveal">
+        <p class="big-quote" data-i18n="bigQuote">Salon El Jida célèbre la beauté et le bien-être de chaque femme à Aïn Taya. Installez-vous et laissez nos experts sublimer votre chevelure.</p>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img src="assets/magasin.jpg" alt="Salon El Jida Aïn Taya" />
+          <div class="badge-card">
+            <span>El Jida</span>
+            <p data-i18n="badgeText">Coiffure & Beauté Aïn Taya</p>
+          </div>
+        </div>
+
+        <div class="about-content reveal" data-delay="120">
+          <p class="eyebrow" data-i18n="aboutEyebrow">À propos</p>
+          <h2 data-i18n="aboutTitle">Un lieu où vous vous sentez belle, sereine et confiante</h2>
+          <p class="lead" data-i18n="aboutLead">Nous combinons créativité, technique impeccable et écoute attentive pour créer un résultat qui respecte votre personnalité.</p>
+          <p data-i18n="aboutText">Notre équipe du Salon El Jida à Aïn Taya utilise des produits de qualité et des protocoles d'hygiène stricts pour vous offrir le meilleur de la coiffure.</p>
+
+          <div class="features-grid">
+            <div class="feature">
+              <span class="feature-icon">◷</span>
+              <h3 data-i18n="feature1Title">Réservation facile</h3>
+              <p data-i18n="feature1Text">Choisissez votre créneau et confirmez rapidement sur WhatsApp.</p>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">⚡</span>
+              <h3 data-i18n="feature2Title">Tarifs avantageux</h3>
+              <p data-i18n="feature2Text">Des prestations de haute qualité adaptées à tous les budgets.</p>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">♧</span>
+              <h3 data-i18n="feature3Title">Colorations de choix</h3>
+              <p data-i18n="feature3Text">Colorations locales et d'importation pour une brillance durable.</p>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">✺</span>
+              <h3 data-i18n="feature4Title">Conseils sur-mesure</h3>
+              <p data-i18n="feature4Text">Diagnostic personnalisé pour la coupe et la couleur parfaites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hours section-sm">
+      <div class="container hours-grid reveal">
+        <div>
+          <p class="eyebrow" data-i18n="hoursEyebrow">Notre fonctionnement</p>
+          <h2 data-i18n="hoursTitle">Horaires d'ouverture</h2>
+          <p data-i18n="hoursText">Nous sommes ouverts tous les jours. Pour garantir votre créneau, réservez votre visite à l'avance.</p>
+        </div>
+        <div class="hours-card">
+          <div><span data-i18n="daysWeek">Samedi au jeudi</span><strong>09:00 - 18:00</strong></div>
+          <div><span data-i18n="daySat">Vendredi</span><strong>Fermé</strong></div>
+          <div><span data-i18n="daySun">Jours fériés</span><strong>Sur RDV</strong></div>
+          <a class="btn btn-primary" href="#contact" data-i18n="bookVisit">Réserver un rendez-vous</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="servicesEyebrow">Nos prestations & Tarifs</p>
+          <h2 data-i18n="servicesTitle">Des services de coiffure & beauté adaptés à vos besoins</h2>
+          <p data-i18n="servicesSub">Découvrez nos prestations officielles de coiffure, coloration et onglerie au Salon El Jida.</p>
+        </div>
+
+        <div class="services-list">
+          <article class="service-row reveal">
+            <span class="service-number">01</span>
+            <img src="assets/new-coupes-brushing.png" alt="Coupes &amp; Brushings" class="service-thumb" loading="lazy" />
+            <div>
+              <h3 data-i18n="srv1Title">Coupes &amp; Brushings</h3>
+              <p data-i18n="srv1Text">Coupe seule 500 DA, Bain + Coupe 700 DA, Coiffage court 700 DA, mi-long 900 DA, long 1 200 à 1 500 DA.</p>
+            </div>
+            <a href="#contact" data-i18n="learnMore">Réserver</a>
+          </article>
+          <article class="service-row reveal">
+            <span class="service-number">02</span>
+            <img src="assets/new-coloration-meches.png" alt="Coloration &amp; Teinture" class="service-thumb" loading="lazy" />
+            <div>
+              <h3 data-i18n="srv2Title">Coloration &amp; Teinture</h3>
+              <p data-i18n="srv2Text">Application coloration 500 DA, Coloration locale 2 500 - 3 000 DA, Coloration importation 4 000 à 5 000 DA.</p>
+            </div>
+            <a href="#contact" data-i18n="learnMore">Réserver</a>
+          </article>
+          <article class="service-row reveal">
+            <span class="service-number">03</span>
+            <img src="assets/05_meches_foils.png" alt="Mèches, Ombré &amp; Sun Light" class="service-thumb" loading="lazy" />
+            <div>
+              <h3 data-i18n="srv3Title">Mèches, Ombré &amp; Sun Light</h3>
+              <p data-i18n="srv3Text">Mèches locales 2 000 DA/dose, Mèches importation 4 000 DA/dose, Sun Light 3 000 DA/dose, Ombré 5 000 DA/dose.</p>
+            </div>
+            <a href="#contact" data-i18n="learnMore">Réserver</a>
+          </article>
+          <article class="service-row reveal">
+            <span class="service-number">04</span>
+            <img src="assets/Add_a_professional_female_colorist_hairstylist_beh-1786014091441.png" alt="Balayage" class="service-thumb" loading="lazy" />
+            <div>
+              <h3 data-i18n="srv4Title">Balayage</h3>
+              <p data-i18n="srv4Text">Balayage professionnel à 4 000 DA par dose pour un rendu lumineux et dégradé parfait.</p>
+            </div>
+            <a href="#contact" data-i18n="learnMore">Réserver</a>
+          </article>
+          <article class="service-row reveal">
+            <span class="service-number">05</span>
+            <img src="assets/new-onglerie-extensions.png" alt="Onglerie &amp; Beauté des Mains/Pieds" class="service-thumb" loading="lazy" />
+            <div>
+              <h3 data-i18n="srv5Title">Onglerie &amp; Beauté des Mains/Pieds</h3>
+              <p data-i18n="srv5Text">Manucure (1500-2500 DA), Pédicure (2000-3000 DA), Pose Résine (4500 DA), Extensions Gel-X (5000 DA), Nail Art.</p>
+            </div>
+            <a href="#contact" data-i18n="learnMore">Réserver</a>
+          </article>
+          <article class="service-row reveal">
+            <span class="service-number">06</span>
+            <img src="assets/gallery-spa-room.jpg" alt="Soins Visage" class="service-thumb" loading="lazy" />
+            <div>
+              <h3 data-i18n="srv6Title">Soins Visage</h3>
+              <p data-i18n="srv6Text">Soin visage classique : 3500 DA — Soin visage profond : 4500 DA.</p>
+            </div>
+            <a href="#contact" data-i18n="learnMore">Réserver</a>
+          </article>
+          <article class="service-row reveal">
+            <span class="service-number">07</span>
+            <img src="assets/08_makeup_maquillage.png" alt="Épilation" class="service-thumb" loading="lazy" />
+            <div>
+              <h3 data-i18n="srv7Title">Épilation</h3>
+              <p data-i18n="srv7Text">Visage fil : 1500 DA · Visage cire : 1800 DA · Aisselles : 800 DA · Demi-jambes : 800 DA · Jambes complètes : 1600 DA · Demi-bras : 600 DA · Bras complet : 1200 DA · Corps complet : 6000 DA.</p>
+            </div>
+            <a href="#contact" data-i18n="learnMore">Réserver</a>
+          </article>
+          <article class="service-row reveal" style="background: linear-gradient(135deg, #fff8f0 0%, #fff3e8 100%); border: 2px solid var(--primary); border-radius: 16px; padding: 1.5rem 2rem;">
+            <span class="service-number" style="background: var(--primary); color: #fff; border-radius: 50%; width: 2.5rem; height: 2.5rem; display:flex; align-items:center; justify-content:center; font-size: 1rem; flex-shrink:0;">🎁</span>
+            <img src="assets/Add_a_professional_female_hairstylist_behind_the_w-1786014184952.png" alt="Conseil &amp; Diagnostic" class="service-thumb" loading="lazy" />
+            <div>
+              <h3 data-i18n="srv8Title" style="color: var(--primary);">🎁 Conseil sur mesure &amp; Diagnostic</h3>
+              <p data-i18n="srv8Text">Conseil personnalisé et diagnostic capillaire ou beauté offerts gratuitement pour chaque cliente. Notre équipe vous guide vers la prestation idéale.</p>
+            </div>
+            <a href="#contact" data-i18n="learnMoreFree" style="color: var(--primary); font-weight: 800;">Gratuit — Prendre RDV</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="galleryEyebrow">Galerie photos</p>
+          <h2 data-i18n="galleryTitle">Réalisations du Salon El Jida</h2>
+          <p data-i18n="gallerySub">Découvrez notre salon et nos plus beaux coiffages et pose d'ongles en images.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item large reveal">
+            <img src="assets/magasin.jpg" alt="Façade et devanture Salon El Jida Aïn Taya" loading="lazy" />
+            <figcaption>Salon El Jida</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="40">
+            <img src="assets/new-coupes-brushing.png" alt="Coupes et Brushing Salon El Jida" loading="lazy" />
+            <figcaption>Brushing &amp; Coiffage</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="60">
+            <img src="assets/new-coloration-meches.png" alt="Colorations et Mèches Salon El Jida" loading="lazy" />
+            <figcaption>Coloration &amp; Mèches</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="80">
+            <img src="assets/salon-interior.jpg" alt="Intérieur Salon El Jida" loading="lazy" />
+            <figcaption>Salon &amp; Équipement</figcaption>
+          </figure>
+          <figure class="gallery-item wide reveal" data-delay="100">
+            <img src="assets/new-onglerie-extensions.png" alt="Onglerie et Extensions Salon El Jida" loading="lazy" />
+            <figcaption>Onglerie &amp; Extensions</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="120">
+            <img src="assets/service-hair.jpg" alt="Prestation coiffure Salon El Jida" loading="lazy" />
+            <figcaption>Prestation Coiffure</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="140">
+            <img src="assets/salon-brushing-dame.png" alt="Brushing dame Salon El Jida" loading="lazy" />
+            <figcaption>Brushing Dame</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="160">
+            <img src="assets/salon-coloration-finition.png" alt="Coloration et finition Salon El Jida" loading="lazy" />
+            <figcaption>Coloration &amp; Finition</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="180">
+            <img src="assets/salon-modele-coiffage.png" alt="Modèle coiffage Salon El Jida" loading="lazy" />
+            <figcaption>Modèle &amp; Coiffage</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="200">
+            <img src="assets/gallery-coloring.jpg" alt="Soin et style Salon El Jida" loading="lazy" />
+            <figcaption>Soin &amp; Style</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="220">
+            <img src="assets/gallery-nail-art.jpg" alt="Nail art et onglerie Salon El Jida" loading="lazy" />
+            <figcaption>Onglerie &amp; Nail Art</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="240">
+            <img src="assets/service-makeup.jpg" alt="Makeup et beauté Salon El Jida" loading="lazy" />
+            <figcaption>Makeup &amp; Beauté</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="260">
+            <img src="assets/gallery-makeup-tools.jpg" alt="Outils makeup Salon El Jida" loading="lazy" />
+            <figcaption>Outils &amp; Accessoires</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="280">
+            <img src="assets/service-nails.jpg" alt="Pose ongles Salon El Jida" loading="lazy" />
+            <figcaption>Soins &amp; Pose Ongles</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="300">
+            <img src="assets/hero-salon.jpg" alt="Ambiance salon El Jida" loading="lazy" />
+            <figcaption>Ambiance Salon</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-delay="320">
+            <img src="assets/gallery-spa-room.jpg" alt="Espace soin et détente Salon El Jida" loading="lazy" />
+            <figcaption>Espace Bien-être</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/01_coupe_scissors.png" alt="Coupe aux ciseaux Salon El Jida" loading="lazy" />
+            <figcaption>Coupe Ciseaux</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/02_coupe_trim.png" alt="Coupe et égalisation Salon El Jida" loading="lazy" />
+            <figcaption>Coupe &amp; Égalisation</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/03_brushing_blowdry.png" alt="Brushing &amp; coiffage Salon El Jida" loading="lazy" />
+            <figcaption>Brushing &amp; Coiffage</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/04_brushing_finish.png" alt="Finition brushing Salon El Jida" loading="lazy" />
+            <figcaption>Finition Brushing</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/05_meches_foils.png" alt="Technique mèches Salon El Jida" loading="lazy" />
+            <figcaption>Technique Mèches</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/06_coloration_color.png" alt="Application couleur Salon El Jida" loading="lazy" />
+            <figcaption>Application Couleur</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/07_coloration_rinse.png" alt="Rinçage &amp; soin Salon El Jida" loading="lazy" />
+            <figcaption>Rinçage &amp; Soin</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/08_makeup_maquillage.png" alt="Maquillage événement Salon El Jida" loading="lazy" />
+            <figcaption>Maquillage Événement</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/09_coiffure_updo.png" alt="Coiffure chignon Salon El Jida" loading="lazy" />
+            <figcaption>Coiffure Chignon</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/10_coiffure_braid.png" alt="Coiffure tresse Salon El Jida" loading="lazy" />
+            <figcaption>Coiffure Tresse</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Add_a_professional_bridal_hairstylist_and_makeup_a-1786014201130.png" alt="Mariée Coiffure &amp; Makeup Salon El Jida" loading="lazy" />
+            <figcaption>Coiffure Mariée &amp; Makeup</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Add_a_professional_female_colorist_hairstylist_beh-1786014091441.png" alt="Expert Coloriste Salon El Jida" loading="lazy" />
+            <figcaption>Expert Coloriste</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Add_a_professional_female_hairstylist_behind_the_w-1786014049998.png" alt="Coiffeuse en Action Salon El Jida" loading="lazy" />
+            <figcaption>Coiffeuse en Action</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Add_a_professional_female_hairstylist_behind_the_w-1786014118545.png" alt="Coiffage Tendance Salon El Jida" loading="lazy" />
+            <figcaption>Coiffage Tendance</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Add_a_professional_female_hairstylist_behind_the_w-1786014184952.png" alt="Diagnostic &amp; Conseil Salon El Jida" loading="lazy" />
+            <figcaption>Diagnostic &amp; Conseil</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Add_a_professional_female_hairstylist_behind_the_w-1786014221046.png" alt="Finition Professionnelle Salon El Jida" loading="lazy" />
+            <figcaption>Finition Professionnelle</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Add_a_professional_female_hair_colorist_hairstylis-1786014062056.png" alt="Application Balayage Salon El Jida" loading="lazy" />
+            <figcaption>Application Balayage</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Add_a_professional_female_makeup_artist_behind_the-1786014144864.png" alt="Maquilleuse Pro Salon El Jida" loading="lazy" />
+            <figcaption>Maquilleuse Pro</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Add_a_professional_female_makeup_artist_behind_the-1786014168646.png" alt="Mise en Beauté Salon El Jida" loading="lazy" />
+            <figcaption>Mise en Beauté</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Beautiful_bridal_hairstyle_and_makeup_portrait_of_-1786013682572.png" alt="Portrait Mariée Salon El Jida" loading="lazy" />
+            <figcaption>Portrait Mariée</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Elegant_sophisticated_updo_hairstyle_on_a_young_wo-1786013658982.png" alt="Chignon Chic Salon El Jida" loading="lazy" />
+            <figcaption>Chignon Chic</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Elegant_sophisticated_updo_hairstyle_on_a_young_wo-1786013702977.png" alt="Chignon Soirée Salon El Jida" loading="lazy" />
+            <figcaption>Chignon Soirée</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Professional_beauty_photography_of_a_young_woman_w-1786013635465.png" alt="Photo Beauté Salon El Jida" loading="lazy" />
+            <figcaption>Photo Beauté</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Professional_hair_coloring_photo_of_a_smiling_youn-1786013564261.png" alt="Coloration Lumineuse Salon El Jida" loading="lazy" />
+            <figcaption>Coloration Lumineuse</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Splitscreen_transformation_beauty_portrait_of_a_yo-1786013747856.png" alt="Transformation Coiffure Salon El Jida" loading="lazy" />
+            <figcaption>Transformation Coiffure</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/Stunning_portrait_of_a_young_woman_with_a_complete-1786013555644.png" alt="Portrait Style Salon El Jida" loading="lazy" />
+            <figcaption>Portrait Style</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages section" id="packages">
+      <div class="container packages-grid">
+        <div class="packages-copy reveal">
+          <p class="eyebrow" data-i18n="packagesEyebrow">Tarifs Officiels</p>
+          <h2 data-i18n="packagesTitle">Grille Tarifaire du Salon</h2>
+          <p class="lead" data-i18n="packagesLead">Des prix transparents et détaillés pour chaque prestation à Aïn Taya.</p>
+          <p data-i18n="packagesText">Retrouvez tous nos prix pour la coiffure, la coloration et l'onglerie.</p>
+        </div>
+
+        <div class="package-cards">
+          <article class="package-card reveal">
+            <h3>Coupes & Brushing</h3>
+            <p data-i18n="pkg1Text">Coupe seule 500 DA / Bain + Coupe 700 DA / Brushing de 700 à 1500 DA.</p>
+            <span data-i18n="pkg1Price">dès 500 DA</span>
+          </article>
+          <article class="package-card reveal" data-delay="100">
+            <h3>Coloration & Éclaircissement</h3>
+            <p data-i18n="pkg2Text">Application couleur 500 DA / Coloration locale 2500-3000 DA / Import 4000-5000 DA.</p>
+            <span data-i18n="pkg2Price">dès 500 DA</span>
+          </article>
+          <article class="package-card reveal" data-delay="200">
+            <h3>Mèches, Balayage & Onglerie</h3>
+            <p data-i18n="pkg3Text">Mèches 2000-4000 DA / Balayage 4000 DA / Manucure 1500-2500 DA / Gel-X 5000 DA.</p>
+            <span data-i18n="pkg3Price">dès 1 500 DA</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gift section-sm" aria-label="Tarifs Détaillés">
+      <div class="container gift-grid">
+        <article class="gift-card reveal">
+          <h2 data-i18n="gift1Header">500 DA</h2>
+          <h3 data-i18n="giftCardTitle">Coupes & Brushings</h3>
+          <p data-i18n="gift1Text">Coupes & Brushings (Tous types de cheveux)</p>
+          <ul>
+            <li data-i18n="gift1Item1">Coupe seule : 500 DA</li>
+            <li data-i18n="gift1Item2">Bain + Coupe stylée : 700 DA</li>
+            <li data-i18n="gift1Item3">Bain + Coiffage : 700 à 1500 DA</li>
+          </ul>
+          <a class="btn btn-outline" href="#contact" data-i18n="buyGiftCard">Réserver ce service</a>
+        </article>
+        <article class="gift-card featured reveal" data-delay="100">
+          <h2 data-i18n="gift2Header">500 DA</h2>
+          <h3 data-i18n="giftCardTitle">Coloration & Technique</h3>
+          <p data-i18n="gift2Text">Colorations & Technique Éclaircissement</p>
+          <ul>
+            <li data-i18n="gift2Item1">Application coloration : 500 DA</li>
+            <li data-i18n="gift2Item2">Coloration locale / import : 2500 à 5000 DA</li>
+            <li data-i18n="gift2Item3">Mèches / Balayage / Ombré : 2000 à 4000 DA</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact" data-i18n="buyGiftCard">Réserver ce service</a>
+        </article>
+        <article class="gift-card reveal" data-delay="200">
+          <h2 data-i18n="gift3Header">1500 DA</h2>
+          <h3 data-i18n="giftCardTitle">Onglerie &amp; Extensions</h3>
+          <p data-i18n="gift3Text">Nail Basics &amp; Extensions Onglerie</p>
+          <ul>
+            <li data-i18n="gift3Item1">Manucure : 1500 - 2500 DA</li>
+            <li data-i18n="gift3Item2">Pédicure : 2000 - 3000 DA</li>
+            <li data-i18n="gift3Item3">Gel-X / Pose Résine : 4500 - 5000 DA</li>
+          </ul>
+          <a class="btn btn-outline" href="#contact" data-i18n="buyGiftCard">Réserver ce service</a>
+        </article>
+        <article class="gift-card reveal" data-delay="300">
+          <h2>1500 DA</h2>
+          <h3>Makeup &amp; Mariée</h3>
+          <p>Prestations beauté complètes pour tous les événements</p>
+          <ul>
+            <li>Makeup simple : <strong>1 500 DA</strong></li>
+            <li>Makeup soirée (avec faux cils effet naturel) : <strong>à partir de 2 500 DA</strong></li>
+            <li>Prestation coiffure : <strong>à partir de 3 000 DA</strong></li>
+            <li>Offre fiançailles : <strong>à partir de 8 000 DA</strong></li>
+            <li>Offre mariée : <strong>12 000 DA</strong></li>
+          </ul>
+          <a class="btn btn-outline" href="#contact">Réserver ce service</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="story section-sm">
+      <div class="container story-grid reveal">
+        <div>
+          <p class="eyebrow" data-i18n="storyEyebrow">Notre philosophie</p>
+          <h2 data-i18n="storyTitle">Salon El Jida : Votre beauté, notre passion</h2>
+        </div>
+        <div>
+          <p data-i18n="storyText1">Au Salon El Jida à Aïn Taya, nous mettons notre expertise au service de vos cheveux. Notre objectif : vous offrir un moment de détente tout en sublimant votre style.</p>
+          <p data-i18n="storyText2">Nous portons une attention particulière à la santé de vos cheveux et à la qualité des produits utilisés.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter section-sm">
+      <div class="container newsletter-card reveal">
+        <div>
+          <p class="eyebrow" data-i18n="newsEyebrow">Contact & Nouveautés</p>
+          <h2 data-i18n="newsTitle">Restez connectée avec le Salon El Jida</h2>
+          <p data-i18n="newsText">Laissez votre email pour recevoir nos promotions et offres exclusives.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <label class="sr-only" for="newsletterEmail" data-i18n="labelEmail">Email</label>
+          <input id="newsletterEmail" type="email" placeholder="Votre email" data-i18n-placeholder="emailPlaceholder" required />
+          <button class="btn btn-primary" type="submit" data-i18n="subscribeBtn">S'abonner</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="reviewsEyebrow">Témoignages & Avis Clients</p>
+          <h2 data-i18n="reviewsTitle">Avis vérifiés Facebook & Google Maps</h2>
+          <p data-i18n="reviewsSub">Retrouvez les retours et évaluations de nos clientes sur notre page Facebook et Google Maps.</p>
+          <div class="hero-actions" style="margin-top: 1.5rem; justify-content: center;">
+            <a class="btn btn-primary" href="https://www.facebook.com/moulaeljida/reviews" target="_blank" rel="noopener" data-i18n="btnFbReviews">★ Voir avis Facebook</a>
+            <a class="btn btn-soft" href="https://maps.app.goo.gl/iBafWSTdD9sM9f1G8" target="_blank" rel="noopener" data-i18n="btnGmapReviews">★ Voir avis Google Maps</a>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <blockquote class="review reveal">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev1Text">“Salon magnifique à Aïn Taya ! Accueil très chaleureux, l'équipe est très à l'écoute. Le brushing ainsi que la coloration sont parfaits et tiennent très bien. Je recommande à 100% !”</p>
+            <footer>Sarah M. <span data-i18n="rev1Role">\ Avis Facebook</span></footer>
+          </blockquote>
+          <blockquote class="review reveal" data-delay="100">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev2Text">“Excellente expérience au Salon El Jida. Les mèches et le balayage sont super bien faits avec des produits de qualité. Les tarifs sont très raisonnables pour la prestation.”</p>
+            <footer>Amel B. <span data-i18n="rev2Role">/ Avis Google Maps</span></footer>
+          </blockquote>
+          <blockquote class="review reveal" data-delay="200">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev3Text">“Onglerie au top ! Pose Gel-X et résine très propre et soignée, le résultat est juste magnifique. C'est devenu mon salon de beauté préféré à Aïn Taya.”</p>
+            <footer>Nour H. <span data-i18n="rev3Role">\ Avis Google Maps</span></footer>
+          </blockquote>
+          <blockquote class="review reveal" data-delay="300">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev4Text">“Maquillage et coiffure de soirée impeccables ! Merci à toute l'équipe du Salon El Jida pour votre professionnalisme, votre précision et votre gentillesse.”</p>
+            <footer>Yasmine K. <span data-i18n="rev4Role">/ Avis Facebook</span></footer>
+          </blockquote>
+          <blockquote class="review reveal" data-delay="400">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev5Text">“Toujours satisfaite de mes visites chez El Jida. La coupe, le soin et la coloration locale sont exactement ce que j'avais demandé. Bravo !”</p>
+            <footer>Lina D. <span data-i18n="rev5Role">\ Avis Facebook</span></footer>
+          </blockquote>
+          <blockquote class="review reveal" data-delay="500">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev6Text">“Cadre agréable, propre et hygiène irréprochable. Personnel très accueillant à Aïn Taya. Très bonne prestation de coiffure et brushing !”</p>
+            <footer>Meriem F. <span data-i18n="rev6Role">/ Avis Google Maps</span></footer>
+          </blockquote>
+          <blockquote class="review reveal" data-delay="600">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev7Text">“Très bon accueil, la coiffeuse Jida est passionnée et prend le temps d'expliquer ce qui convient le mieux à la nature du cheveu. Merci beaucoup !”</p>
+            <footer>Imene R. <span data-i18n="rev7Role">\ Avis Facebook</span></footer>
+          </blockquote>
+          <blockquote class="review reveal" data-delay="700">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev8Text">“Un salon au top à Aïn Taya ! Rapport qualité-prix imbattable pour les brushings, soins et colorations. J'y vais régulièrement et je ne suis jamais déçue.”</p>
+            <footer>Chahinez K. <span data-i18n="rev8Role">/ Avis Google Maps</span></footer>
+          </blockquote>
+          <blockquote class="review reveal" data-delay="800">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev9Text">“Effet Sun Light et Ombré absolument magnifique ! Mes cheveux ont gardé toute leur souplesse et brillance. Merci au Salon El Jida !”</p>
+            <footer>Khadidja T. <span data-i18n="rev9Role">\ Avis Facebook</span></footer>
+          </blockquote>
+          <blockquote class="review reveal" data-delay="900">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev10Text">“Soin pédicure spa et manucure parfaites pour se détendre. Ambiance calme et esthéticiennes très douces à Aïn Taya.”</p>
+            <footer>Hanane B. <span data-i18n="rev10Role">/ Avis Google Maps</span></footer>
+          </blockquote>
+          <blockquote class="review reveal" data-delay="1000">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev11Text">“J'ai les cheveux très longs et épais, le brushing a été réalisé avec une patience et une maîtrise impressionnantes. Je recommande sans hésitation !”</p>
+            <footer>Ryma L. <span data-i18n="rev11Role">\ Avis Facebook</span></footer>
+          </blockquote>
+          <blockquote class="review reveal" data-delay="1100">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="rev12Text">“Clientèle fidèle depuis des mois. Le service est constant, le salon est très propre et les prix sont transparents. Bravo à Jida et son équipe !”</p>
+            <footer>Wassila M. <span data-i18n="rev12Role">/ Avis Google Maps</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="location section-sm" id="location">
+      <div class="container location-grid">
+        <div class="location-copy reveal">
+          <p class="eyebrow" data-i18n="locEyebrow">Localisation Google Maps</p>
+          <h2 data-i18n="locTitle">Venez nous rendre visite à Aïn Taya, Alger</h2>
+          <p data-i18n="locText">Le Salon El Jida est situé à Aïn Taya, Alger (16000).</p>
+          <div class="location-actions">
+            <a class="btn btn-primary" href="https://maps.app.goo.gl/iBafWSTdD9sM9f1G8" target="_blank" rel="noopener" data-i18n="openMaps">Ouvrir dans Google Maps</a>
+            <a class="btn btn-whatsapp whatsapp-link" href="https://wa.me/213551858534?text=Bonjour%20Salon%20El%20Jida,%20je%20veux%20conna%C3%AEtre%20votre%20localisation." target="_blank" rel="noopener" data-i18n="askWhatsapp">Demander sur WhatsApp</a>
+          </div>
+        </div>
+        <div class="map-card reveal" data-delay="120">
+          <iframe
+            title="Localisation Salon El Jida sur Google Maps"
+            src="https://www.google.com/maps?q=36.7912556,3.2885558&z=17&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow" data-i18n="contactEyebrow">Prenez rendez-vous !</p>
+          <h2 data-i18n="contactTitle">Sélectionnez votre prestation et réservez</h2>
+          <p data-i18n="contactSub">Remplissez le formulaire et envoyez votre demande directement via WhatsApp.</p>
+          <div class="contact-info">
+            <p><strong data-i18n="contactAddressLabel">Adresse :</strong> <span data-i18n="contactAddress">Aïn Taya, Alger, Algérie (16000)</span></p>
+            <p><strong data-i18n="contactPhoneLabel">Téléphone :</strong> +213 551 85 85 34 / +213 668 43 84 22</p>
+            <p><strong data-i18n="contactEmailLabel">Email :</strong> nadia.moula12@gmail.com</p>
+            <a class="btn btn-whatsapp contact-whatsapp whatsapp-link" href="https://wa.me/213551858534?text=Bonjour%20Salon%20El%20Jida,%20je%20veux%20r%C3%A9server%20un%20rendez-vous." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.8a8 8 0 0 1-11.9 7l-3.9 1 1-3.8A8 8 0 1 1 20 11.8Zm-8-5.9a5.9 5.9 0 0 0-5 9l.2.3-.6 2.1 2.2-.6.3.2a5.9 5.9 0 1 0 2.9-11Zm3.4 8.4c-.2.5-1 1-1.4 1.1-.4.1-.9.2-2.8-.6-2.4-1-3.9-3.4-4-3.6-.1-.1-1-1.3-1-2.5s.6-1.8.8-2c.2-.2.4-.3.6-.3h.4c.1 0 .3 0 .5.4l.7 1.7c.1.2.1.4 0 .5l-.3.5-.2.3c-.1.1-.2.3-.1.5.1.2.6 1 1.3 1.6.9.8 1.6 1 1.8 1.1.2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.7.8c.2.1.4.2.4.3 0 .1 0 .6-.2 1.1Z"/></svg>
+              <span data-i18n="whatsappDirect">WhatsApp direct</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="booking-form reveal" id="bookingForm">
+          <div class="form-row">
+            <label for="name" data-i18n="labelName">Nom</label>
+            <input id="name" name="name" type="text" placeholder="Votre nom" data-i18n-placeholder="namePlaceholder" required />
+          </div>
+          <div class="form-row">
+            <label for="phone" data-i18n="labelPhone">Téléphone</label>
+            <input id="phone" name="phone" type="tel" placeholder="0551 85 85 34" required />
+          </div>
+          <div class="form-row">
+            <label for="service" data-i18n="labelService">Prestation</label>
+            <select id="service" name="service" required>
+              <option value="" data-i18n="optSelectService">Choisir une prestation</option>
+              <option value="Coupe & Brushing" data-i18n="optHair">Coupe & Brushing</option>
+              <option value="Coloration / Application couleur" data-i18n="optColour">Coloration / Application couleur</option>
+              <option value="Mèches / Éclaircissement" data-i18n="optMakeup">Mèches / Éclaircissement</option>
+              <option value="Balayage" data-i18n="optManicure">Balayage</option>
+              <option value="Onglerie & Soins" data-i18n="optPedicure">Onglerie & Soins</option>
+              <option value="Forfait complet" data-i18n="optPackage">Forfait complet</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="date" data-i18n="labelDate">Date souhaitée</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+          <div class="form-row full">
+            <label for="message" data-i18n="labelMessage">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Précisez votre longueur de cheveux, type de prestation ou heure souhaitée..." data-i18n-placeholder="messagePlaceholder"></textarea>
+          </div>
+          <button class="btn btn-primary full" type="submit" data-i18n="btnSendWhatsapp">Envoyer sur WhatsApp</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <a href="index.html" class="logo footer-logo">
+        <span class="logo-mark">✦</span>
+        <span>Salon El Jida<br><small>Coiffure & Beauté</small></span>
+      </a>
+      <p data-i18n="footerText">Salon El Jida — Salon de coiffure & beauté à Aïn Taya, Alger. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#gallery" data-i18n="navGallery">Galerie</a>
+        <a href="#packages" data-i18n="navPackages">Tarifs</a>
+        <a href="#location" data-i18n="navLocation">Localisation</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float whatsapp-link" href="https://wa.me/213551858534?text=Bonjour%20Salon%20El%20Jida,%20je%20veux%20r%C3%A9server%20un%20rendez-vous." target="_blank" rel="noopener" aria-label="Contacter directement sur WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 11.9a8.2 8.2 0 0 1-12.1 7.2l-4.2 1.1 1.1-4.1a8.2 8.2 0 1 1 15.2-4.2Zm-8.2-6a6 6 0 0 0-5.1 9.2l.2.3-.6 2.2 2.3-.6.3.2A6 6 0 1 0 12 5.9Zm3.5 8.6c-.2.5-1 1-1.5 1.2-.4.1-1 .2-2.9-.6-2.4-1-4-3.5-4.1-3.6-.1-.1-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.6-.3h.5c.1 0 .4 0 .5.4l.7 1.7c.1.2.1.4 0 .6l-.3.4-.2.3c-.1.1-.2.3-.1.5.1.2.6 1 1.3 1.7.9.8 1.7 1.1 1.9 1.2.2.1.4.1.5-.1l.7-.9c.2-.2.4-.2.6-.1l1.8.8c.2.1.4.2.4.3.1.1 0 .7-.2 1.2Z"/></svg>
+  </a>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>
